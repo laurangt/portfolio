@@ -5,8 +5,7 @@ import LanguagesTools from './components/LanguagesTools';
 
 function App() {
   return (
-    <div className="App bg-black">
-      <h1 className='text-white'>Hello</h1>
+    <div className="App bg-blue text-sans">
       <LandingPage />
       <LanguagesTools />
     </div>

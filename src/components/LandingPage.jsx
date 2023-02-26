@@ -1,9 +1,24 @@
 import React from 'react'
+import Button from './shared/Button'
+import Navbar from '../components/shared/Navbar'
 
-function LandingPage() {
+function LandingPage(props) {
+  const styles = {fontSize: 200}
+
   return (
-    <div >
-      <h2 className='text-orange-600'>This is LandingPage</h2>
+    <div className='h-screen text-white text-2xl'>
+      <Navbar />
+      <p style={styles} className='opacity-20	absolute right-0 -top-3'>Developer</p>
+      <hr class="w-1/3 h-1 bg-pink absolute left-0 top-40" />
+      <div className='absolute top-1/3 leading-10'>
+        <p>Hi, I'm</p>
+        <p className='font-lora text-4xl'>Laura Nguyen-Trong</p>
+        <p>Full-Stack Developer</p>
+        <p className='mt-20 mb-3'>Do you need a website? Are you looking for a developer to join your team?</p>
+        <Button text="Let's talk"/>
+      </div>
+      <hr class="w-1/3 h-1 bg-pink absolute right-0 bottom-40" />
+      <p style={styles} className='opacity-20	absolute left-0 bottom-5'>Developer</p>
     </div>
   )
 }
