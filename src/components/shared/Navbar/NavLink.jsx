@@ -1,9 +1,10 @@
 import React from 'react'
+import { HashLink as Link } from 'react-router-hash-link';
 
 function NavLink(props) {
   return (
     <div>
-      <p className='px-5 hover:text-pink delay-75'>{props.text}</p>
+      <Link to={props.link} className='px-5 hover:text-pink delay-75'>{props.text}</Link>
     </div>
   )
 }

@@ -3,10 +3,10 @@ import NavLink from './NavLink'
 
 function Navbar() {
   return (
-    <div className='flex absolute right-64 pt-10 z-10'>
-      <NavLink text="Projects" />
-      <NavLink text="Services" />
-      <NavLink text="Contact" />
+    <div className='flex absolute right-32 pt-10 z-10'>
+      <NavLink link="/#projects" text="Projects" />
+      <NavLink link="/#services" text="Services" />
+      <NavLink link="/#contact" text="Contact" />
     </div>
   )
 }
