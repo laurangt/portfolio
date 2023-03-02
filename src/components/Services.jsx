@@ -16,24 +16,24 @@ import SpssLogo from '../images/spss.jpg'
 
 function Services() {
   return (
-    <div id="services" className='h-screen bg-blue text-white text-2xl'>
+    <div id="services" className=' bg-blue text-white text-2xl'>
       <h1 className='text-4xl pt-20 px-20 lg:px-72'>Services</h1>
       <hr className="w-1/3 h-1 bg-pink border-none mt-20" />
-      <div className='px-20 lg:px-72 mt-20'>
-        <p>I`m a full-stack developer, passionate about coding and creating amazing websites that enhance user experience.</p>
-        <div className='flex gap-20 mt-16'>
-          <div className='w-1/2'>
+      <div className='px-20 lg:px-72 py-10'>
+        <p className='text-justify'>I`m a full-stack developer, passionate about coding and creating amazing websites that enhance user experience.</p>
+        <div className='xl:flex gap-20 mt-16'>
+          <div className='xl:w-1/2'>
             <p className='text-center mb-2.5'>Web development</p>
             <p className='text-justify'>Whether you need a website for your new business or a makeover for your current website,  I will make sure your vision is realised and more.</p>
           </div>
-          <div className='w-1/2'>
+          <div className='xl:w-1/2 mt-10 xl:mt-0'>
             <p className='text-center mb-2.5'>UI/UX design</p>
-            <p className='text-justify'>You don`t have an exact idea of what you want your website to look like? Let me help you create a vision and come up with an amazing design that will greatly benefit your business.</p>
+            <p className='text-justify'>You don't have an exact idea of what you want your website to look like? Let me help you create a vision and come up with an amazing design that will greatly benefit your business.</p>
           </div>
         </div>
-        <div className='mt-16'>
+        <div className='my-16'>
           <p className='text-3xl'>Technologies</p>
-          <div className='grid grid-cols-4 mt-5'>
+          <div className='md:grid xl:grid-cols-4 md:grid-cols-2 mt-5'>
             <div>
               <Technology img_url={RubyLogo} title="Ruby"/>
               <Technology img_url={JavascriptLogo} title="JavaScript"/>
