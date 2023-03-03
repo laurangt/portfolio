@@ -5,7 +5,7 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <div className="App w-screen text-sans">
+    <div className="App text-sans">
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />

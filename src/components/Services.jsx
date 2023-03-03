@@ -16,10 +16,10 @@ import SpssLogo from '../images/spss.jpg'
 
 function Services() {
   return (
-    <div id="services" className=' bg-blue text-white text-2xl'>
-      <h1 className='text-4xl pt-20 px-20 lg:px-72'>Services</h1>
+    <div id="services" className=' bg-blue text-white text-xl2'>
+      <h1 className='text-xl4 pt-20 px-10 lg:px-72'>Services</h1>
       <hr className="w-1/3 h-1 bg-pink border-none mt-20" />
-      <div className='px-20 lg:px-72 py-10'>
+      <div className='px-10 lg:px-72 py-10'>
         <p className='text-justify'>I`m a full-stack developer, passionate about coding and creating amazing websites that enhance user experience.</p>
         <div className='xl:flex gap-20 mt-16'>
           <div className='xl:w-1/2'>
@@ -52,8 +52,8 @@ function Services() {
             </div>
             <div>
               <Technology img_url={CSSLogo} title="CSS"/>
-              <Technology img_url={TailwindLogo} title="Tailwind CSS"/>
-              <Technology img_url={BootstrapLogo} title="Bootstrap CSS"/>
+              <Technology img_url={TailwindLogo} title="Tailwind"/>
+              <Technology img_url={BootstrapLogo} title="Bootstrap"/>
             </div>
           </div>
         </div>

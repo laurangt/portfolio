@@ -15,6 +15,17 @@ module.exports = {
     fontFamily: {
       Habibi: ['Habibi'],
       lora : ['Lora']
+    },
+    fontSize: {
+      lgSize: 200,
+      nmSize: 75,
+      sm: 14,
+      lg: 18,
+      xl: 20,
+      xl2: 24,
+      xl3: 30,
+      xl4: 36
+
     }
   },
   plugins: [],

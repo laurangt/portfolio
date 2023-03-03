@@ -26,11 +26,11 @@ function Contact() {
 
   return (
     <div id="contact" className='mb-20'>
-      <h1 className='text-4xl mt-20 px-20 lg:px-72'>Contact</h1>
+      <h1 className='text-xl4 mt-20 px-10 lg:px-72'>Contact</h1>
       <hr className="w-1/3 h-1 bg-pink border-none mt-20" />
-        <div className='px-20 lg:px-72 xl:flex xl:justify-between'>
+        <div className='px-10 lg:px-72 xl:flex xl:justify-between'>
           <div className='flex flex-col'>
-            <p className="my-10 text-2xl">Contact me by filling out this form or sent an email to laurangt@yahoo.com. </p>
+            <p className="my-10 text-xl lg:text-xl2">Contact me by filling out this form or sent an email to laurangt@yahoo.com. </p>
             <form id="contactForm" ref={form} onSubmit={sendEmail} className="text-lg">
               <div className='flex mb-5'>
                 <label htmlFor="name" className='w-36 self-center'>Name</label>
