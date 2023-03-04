@@ -1,7 +1,7 @@
 import React, {useRef} from 'react'
 import ProfilePic from '../images/profilepic.jpg'
 
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   const form = useRef();
@@ -10,8 +10,8 @@ function Contact() {
     e.preventDefault()
     emailjs
       .sendForm(
-        'service_21yg2nn',
-        'template_iliq57m',
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         e.target,
         "by35LgX_KNrtRLL7n"
       )
