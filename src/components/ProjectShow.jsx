@@ -1,36 +1,36 @@
 import React from 'react'
-import FilmotecaVideo from '../images/videos/filmotecaVideo.mov';
 import Navbar from './shared/Navbar/Navbar';
+import { useParams } from 'react-router-dom';
 
-function ProjectShow() {
+function ProjectShow({projects}) {
+  const { slug } = useParams();
+  console.log(slug)
+  const project = projects.find((p) => p.slug === slug);
+  console.log(project);
+
+  if (!project) {
+    return <div>Project not found</div>;
+  }
+
   return (
-    <div className='h-screen w-screen bg-blue text-white text-xl sm:text-xl2'>
+    <div className='bg-blue text-white text-xl sm:text-xl2'>
       <Navbar />
-        <h1 className='text-xl4 pt-20 px-10 lg:px-72'>Filmoteca</h1>
+        <h1 className='text-xl4 pt-20 px-10 lg:px-72'><a href={project.website} target="_blank" rel="noreferrer" className='hover:text-pink'>{project.title}</a></h1>
+        <p className='text-sm px-10 lg:px-72'><a href={project.github} target="_blank" rel="noreferrer" className='hover:text-pink'>Github</a></p>
         <hr className="w-1/3 h-1 bg-pink border-none mt-20" />
         <div className='px-10 lg:px-72 py-10'>
-          <div className='flex'>
-            <div className='w-1/2 leading-loose'>
-              <p>About the project:</p>
-              <ul className='list-disc list-inside'>
-                <li>Revamp of a cinema website, aiming to facilitate user experience</li>
-                <li>Team project</li>
-                <li>ReactJS, JavaScript, Ruby on Rails, Tailwind CSS</li>
-                <li>
-                  <a href="https://filmoteca.herokuapp.com/" target="_blank" rel="noreferrer">Link to website</a>
-                </li>
-                <li>
-                  <a href="https://github.com/RdzYogi/filmoteca" target="_blank" rel="noreferrer">Link to code</a>
-                </li>
-              </ul>
-            </div>
-            <div className='w-1/2'>
-              <video width="640" height="480" controls muted>
-                <source src={FilmotecaVideo} type="video/mp4" />
-              </video>
-            </div>
-          </div>
+          <video width="100%" height="100%" controls muted>
+            <source src={project.video} type="video/mp4" />
+          </video>
+        <div className='leading-loose mt-10'>
+          <p>About the project:</p>
+          <ul className='list-disc list-inside'>
+            <li>Revamp of a cinema website, aiming to facilitate user experience</li>
+            <li>Team project</li>
+            <li>Technologies used: ReactJS, JavaScript, Ruby on Rails, Tailwind CSS</li>
+          </ul>
         </div>
+      </div>
     </div>
   )
 }

@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import ProjectShow from './components/ProjectShow';
+import projects from './components/shared/projectsAPI';
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/projects" element={<ProjectShow />} />
+          {projects.map((project) => (
+            <Route key={project.id} exact path={`/projects/:slug`} element={<ProjectShow projects={projects}/>} />
+          ))}
         </Routes>
       </Router>
     </div>
