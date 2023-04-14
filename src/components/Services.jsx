@@ -35,11 +35,10 @@ function Services() {
           <p className='text-3xl'>Technologies</p>
           <div className='md:grid xl:grid-cols-4 md:grid-cols-2 mt-5'>
             <div>
-              <Technology img_url={RubyLogo} title="Ruby"/>
               <Technology img_url={JavascriptLogo} title="JavaScript"/>
+              <Technology img_url={RubyLogo} title="Ruby"/>
               <Technology img_url={MatlabLogo} title="MatLab"/>
-            </div>
-            <div>
+
               <Technology img_url={ReactLogo} title="React"/>
               <Technology img_url={RailsLogo} title="Ruby on Rails"/>
               <Technology img_url={PostgresqlLogo} title="PostgreSQL"/>
@@ -49,8 +48,7 @@ function Services() {
               <Technology img_url={HtmlLogo} title="HTML"/>
               <Technology img_url={FigmaLogo} title="Figma"/>
               <Technology img_url={SpssLogo} title="SPSS"/>
-            </div>
-            <div>
+
               <Technology img_url={CSSLogo} title="CSS"/>
               <Technology img_url={TailwindLogo} title="Tailwind"/>
               <Technology img_url={BootstrapLogo} title="Bootstrap"/>
