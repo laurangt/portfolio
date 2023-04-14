@@ -12,7 +12,12 @@ const projects = [
     img_url: Filmoteca,
     website:'https://filmoteca.herokuapp.com/',
     github: 'https://github.com/RdzYogi/filmoteca',
-    video: FilmotecaVideo
+    video: FilmotecaVideo,
+    description: [
+      'Revamp of a cinema website, aiming to facilitate user experience',
+      'Group project',
+      'Technologies used: ReactJS, JavaScript, Ruby on Rails, Tailwind CSS'
+    ]
   },
   {
     id: 2,
@@ -21,7 +26,13 @@ const projects = [
     img_url: StayActive,
     website: 'https://www.stayactivecommunity.me/',
     github: 'https://github.com/laurangt/stayactive',
-    video: StayActiveVideo
+    video: StayActiveVideo,
+    phone: 'true',
+    description: [
+      'Final project of Le Wagon Bootcamp',
+      'Group project',
+      'Technologies used: JavaScript, Ruby on Rails, CSS'
+    ]
   },
   {
     id: 3,
@@ -30,7 +41,11 @@ const projects = [
     img_url: NevskiFit,
     website: 'https://nevskifit.com',
     github: 'https://github.com/laurangt/personal_trainer',
-    video: StayActiveVideo
+    video: '',
+    description: [
+      'Freelance Project',
+      'Technologies used: ReactJS, JavaScript, Ruby on Rails, Tailwind CSS'
+    ]
   },
 ];
 
