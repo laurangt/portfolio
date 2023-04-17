@@ -23,6 +23,7 @@ function ProjectShow({projects}) {
         <ul className='list-disc list-inside'>
           {project.description.map(des => <li key={des}>{des}</li>
             )}
+          <li className='hover:text-pink delay-75'><a href={project.website} target="_blank" rel="noreferrer">Link to website</a></li>
         </ul>
       </div>
     </div>
@@ -31,7 +32,7 @@ function ProjectShow({projects}) {
   const mobile = <>
     <div className='px-10 h-screen lg:px-72 py-10 flex'>
       <div className='w-1/2'>
-        <video width="350" controls muted>
+        <video width="300" controls muted>
           <source src={project.video} type="video/mp4" />
         </video>
       </div>
@@ -40,6 +41,7 @@ function ProjectShow({projects}) {
         <ul className='list-disc list-inside'>
           {project.description.map(des => <li key={des}>{des}</li>
             )}
+          <li className='hover:text-pink delay-75'><a href={project.website} target="_blank" rel="noreferrer">Link to website</a></li>
         </ul>
       </div>
     </div>
@@ -47,11 +49,11 @@ function ProjectShow({projects}) {
 
 
   return (
-    <div className='bg-blue text-white text-xl sm:text-xl2'>
+    <div className='bg-blue text-white '>
       <Navbar />
-      <h1 className='text-xl4 pt-20 px-10 lg:px-72'><a href={project.website} target="_blank" rel="noreferrer" className='hover:text-pink'>{project.title}</a></h1>
+      <h1 className='text-2xl pt-10 px-10 lg:px-72'><a href={project.website} target="_blank" rel="noreferrer" className='hover:text-pink'>{project.title}</a></h1>
       <p className='text-sm px-10 lg:px-72'><a href={project.github} target="_blank" rel="noreferrer" className='hover:text-pink'>Github</a></p>
-      <hr className="w-1/3 h-1 bg-pink border-none mt-20" />
+      <hr className="w-1/3 h-1 bg-pink border-none mt-10" />
       {project.phone === 'true' ? mobile : desktop}
     </div>
   )

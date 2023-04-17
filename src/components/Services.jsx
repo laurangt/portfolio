@@ -13,15 +13,16 @@ import ReactLogo from '../images/react.png'
 import TailwindLogo from '../images/tailwind.png'
 import MatlabLogo from '../images/matlab.png'
 import SpssLogo from '../images/spss.jpg'
+import TypeScript from '../images/typescript.png'
 
 function Services() {
   return (
-    <div id="services" className=' bg-blue text-white text-xl2'>
-      <h1 className='text-xl4 pt-20 px-10 lg:px-72'>Services</h1>
-      <hr className="w-1/3 h-1 bg-pink border-none mt-20" />
+    <div id="services" className=' bg-blue text-white'>
+      <h1 className='text-2xl pt-10 px-10 lg:px-72'>Services</h1>
+      <hr className="w-1/3 h-1 bg-pink border-none mt-10" />
       <div className='px-10 lg:px-72 py-10'>
         <p className='text-justify'>I`m a full-stack developer, passionate about coding and creating amazing websites that enhance user experience.</p>
-        <div className='xl:flex gap-20 mt-16'>
+        <div className='xl:flex gap-20 mt-10'>
           <div className='xl:w-1/2'>
             <p className='text-center mb-2.5'>Web development</p>
             <p className='text-justify'>Whether you need a website for your new business or a makeover for your current website,  I will make sure your vision is realised and more.</p>
@@ -31,24 +32,28 @@ function Services() {
             <p className='text-justify'>You don't have an exact idea of what you want your website to look like? Let me help you create a vision and come up with an amazing design that will greatly benefit your business.</p>
           </div>
         </div>
-        <div className='my-16'>
-          <p className='text-3xl'>Technologies</p>
-          <div className='md:grid xl:grid-cols-4 md:grid-cols-2 mt-5'>
+        <div className='my-10'>
+          <p className='text-lg'>Technologies</p>
+          <div className='grid xl:grid-cols-4 grid-cols-2 mt-5'>
             <div>
               <Technology img_url={JavascriptLogo} title="JavaScript"/>
               <Technology img_url={RubyLogo} title="Ruby"/>
               <Technology img_url={MatlabLogo} title="MatLab"/>
-
-              <Technology img_url={ReactLogo} title="React"/>
-              <Technology img_url={RailsLogo} title="Ruby on Rails"/>
-              <Technology img_url={PostgresqlLogo} title="PostgreSQL"/>
-              <Technology img_url={GitLogo} title="Git"/>
+              <Technology img_url={TypeScript} title="TypeScript"/>
             </div>
             <div>
+              <Technology img_url={ReactLogo} title="React"/>
+              <Technology img_url={ReactLogo} title="React Native"/>
+              <Technology img_url={RailsLogo} title="Ruby on Rails"/>
+              <Technology img_url={PostgresqlLogo} title="PostgreSQL"/>
+            </div>
+            <div>
+              <Technology img_url={GitLogo} title="Git"/>
               <Technology img_url={HtmlLogo} title="HTML"/>
               <Technology img_url={FigmaLogo} title="Figma"/>
               <Technology img_url={SpssLogo} title="SPSS"/>
-
+            </div>
+            <div>
               <Technology img_url={CSSLogo} title="CSS"/>
               <Technology img_url={TailwindLogo} title="Tailwind"/>
               <Technology img_url={BootstrapLogo} title="Bootstrap"/>

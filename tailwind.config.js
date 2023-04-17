@@ -16,17 +16,6 @@ module.exports = {
       Habibi: ['Habibi'],
       lora : ['Lora']
     },
-    fontSize: {
-      lgSize: 200,
-      nmSize: 75,
-      sm: 12,
-      lg: 16,
-      xl: 18,
-      xl2: 20,
-      xl3: 24,
-      xl4: 30
-
-    }
   },
   plugins: [],
 }

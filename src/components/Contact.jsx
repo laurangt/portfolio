@@ -25,13 +25,13 @@ function Contact() {
   }
 
   return (
-    <div id="contact" className='mb-20'>
-      <h1 className='text-xl4 mt-20 px-10 lg:px-72'>Contact</h1>
-      <hr className="w-1/3 h-1 bg-pink border-none mt-20" />
+    <div id="contact" className='mb-10'>
+      <h1 className='text-2xl mt-10 px-10 lg:px-72'>Contact</h1>
+      <hr className="w-1/3 h-1 bg-pink border-none mt-10" />
         <div className='px-10 lg:px-72 xl:flex xl:justify-between'>
           <div className='flex flex-col'>
-            <p className="my-10 text-xl lg:text-xl2">Contact me by filling out this form or sent an email to laurangt@yahoo.com. </p>
-            <form id="contactForm" ref={form} onSubmit={sendEmail} className="text-lg">
+            <p className="my-10 ">Contact me by filling out this form or sent an email to laurangt@yahoo.com. </p>
+            <form id="contactForm" ref={form} onSubmit={sendEmail}>
               <div className='flex mb-5'>
                 <label htmlFor="name" className='w-36 self-center'>Name</label>
                 <input type="text" name="name" className="block p-3 w-full bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Your full name" required/>
@@ -42,7 +42,7 @@ function Contact() {
               </div>
               <div className="flex mb-5">
                   <label htmlFor="message" className='w-36 mt-2.5'>Your message</label>
-                  <textarea name="message" rows="6" className="block p-2.5 w-full bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 " placeholder="Leave your message..." required></textarea>
+                  <textarea name="message" rows="4" className="block p-2.5 w-full bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 " placeholder="Leave your message..." required></textarea>
               </div>
               <button type="submit" className="py-3 px-5 font-bold text-center rounded-lg bg-pink w-48">Send message</button>
             </form>

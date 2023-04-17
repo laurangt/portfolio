@@ -44,7 +44,7 @@ const projects = [
     video: '',
     description: [
       'Freelance Project',
-      'Technologies used: ReactJS, JavaScript, Ruby on Rails, Tailwind CSS'
+      'Technologies used: ReactJS, JavaScript, NodeJS, Tailwind CSS'
     ]
   },
 ];
