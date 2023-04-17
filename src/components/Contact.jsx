@@ -13,7 +13,7 @@ function Contact() {
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         e.target,
-        "by35LgX_KNrtRLL7n"
+        process.env.REACT_APP_EMAILJS_USER_ID
       )
       .then((result) => {
         console.log(result.text);
