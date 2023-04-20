@@ -3,6 +3,7 @@ import StayActive from '../../assets/images/coverstayactive.png'
 import NevskiFit from '../../assets/images/covernevski.png'
 import FilmotecaVideo from '../../assets/images/videos/filmotecaVideo.mov';
 import StayActiveVideo from '../../assets/images/videos/StayActiveVideo.MP4'
+import NevskifitVideo from '../../assets/images/videos/NevskifitVideo.mov'
 
 const projects = [
   {
@@ -41,10 +42,10 @@ const projects = [
     img_url: NevskiFit,
     website: 'https://nevskifit.com',
     github: 'https://github.com/laurangt/personal_trainer',
-    video: '',
+    video: NevskifitVideo,
     description: [
       'Freelance Project',
-      'Technologies used: ReactJS, JavaScript, NodeJS, Tailwind CSS'
+      'Technologies used: ReactJS, JavaScript, Tailwind CSS'
     ]
   },
 ];
