@@ -3,7 +3,7 @@ import StayActive from '../../assets/images/coverstayactive.png'
 import NevskiFit from '../../assets/images/covernevski.png'
 import FilmotecaVideo from '../../assets/images/videos/filmotecaVideo.mov';
 import StayActiveVideo from '../../assets/images/videos/StayActiveVideo.MP4'
-import NevskifitVideo from '../../assets/images/videos/NevskifitVideo.mov'
+import NevskifitVideo from '../../assets/images/videos/NevskiVideo.mov'
 
 const projects = [
   {
