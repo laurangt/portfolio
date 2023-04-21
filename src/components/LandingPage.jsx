@@ -5,7 +5,7 @@ import Navbar from './shared/Navbar/Navbar'
 function LandingPage() {
 
   return (
-    <div className='h-screen w-screen px-10 lg:px-72 bg-blue text-white text-lg sm:text-xl'>
+    <div className='h-screen px-10 lg:px-72 bg-blue text-white text-lg sm:text-xl'>
       <Navbar />
       <p className='text-nmSize lg:text-lgSize opacity-20	absolute right-0 -top-12 lg:-top-32'>Developer</p>
       <hr className="w-1/3 h-1 bg-pink absolute left-0 top-40 border-none" />

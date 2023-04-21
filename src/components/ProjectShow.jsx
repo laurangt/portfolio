@@ -30,8 +30,8 @@ function ProjectShow({projects}) {
   </>
 
   const mobile = <>
-    <div className='px-10 h-screen lg:px-72 py-10 flex'>
-      <div className='w-1/2'>
+    <div className='px-10 h-screen lg:px-72 py-10 sm:flex'>
+      <div className='w-1/2 mr-10'>
         <video width="300" controls muted>
           <source src={project.video} type="video/mp4" />
         </video>
