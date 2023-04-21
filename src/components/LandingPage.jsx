@@ -7,7 +7,7 @@ function LandingPage() {
   return (
     <div className='h-screen px-10 lg:px-72 bg-blue text-white text-lg sm:text-xl'>
       <Navbar />
-      <p className='text-nmSize lg:text-lgSize opacity-20	absolute right-0 -top-12 lg:-top-32'>Developer</p>
+      <p className='text-6xl sm:text-9xl opacity-20	absolute right-0 -top-2 sm:-top-10'>Developer</p>
       <hr className="w-1/3 h-1 bg-pink absolute left-0 top-40 border-none" />
       <div className='absolute top-1/3 leading-10'>
         <p>Hi, I'm</p>
@@ -17,7 +17,7 @@ function LandingPage() {
         <Button text="Let's talk"/>
       </div>
       <hr className="w-1/3 h-1 bg-pink absolute right-0 md:bottom-30 bottom-16" />
-      <p className='text-nmSize lg:text-lgSize opacity-20	absolute left-0 -bottom-9 lg:-bottom-24 border-none'>Developer</p>
+      <p className='text-6xl sm:text-9xl opacity-20	absolute left-0 -bottom-2 sm:-bottom-8 border-none'>Developer</p>
     </div>
   )
 }
