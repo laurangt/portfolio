@@ -1,9 +1,9 @@
 import Filmoteca from '../../assets/images/coverfilmoteca.png'
 import StayActive from '../../assets/images/coverstayactive.png'
 import NevskiFit from '../../assets/images/covernevski.png'
-import FilmotecaVideo from '../../assets/images/videos/filmotecaVideo.mov';
-import StayActiveVideo from '../../assets/images/videos/StayActiveVideo.MP4'
-import NevskifitVideo from '../../assets/images/videos/NevskiVideo.mov'
+import FilmotecaVideo from '../../assets/images/videos/filmotecavideo.mov';
+import StayActiveVideo from '../../assets/images/videos/stayactivevideo.mp4'
+import NevskifitVideo from '../../assets/images/videos/nevskifitvideo.mov'
 
 const projects = [
   {
