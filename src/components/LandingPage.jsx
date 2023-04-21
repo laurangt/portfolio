@@ -16,7 +16,7 @@ function LandingPage() {
         <p className='mt-10 lg:mt-20 mb-3 leading-8'>Do you need a website? Are you looking for a developer to join your team?</p>
         <Button text="Let's talk"/>
       </div>
-      <hr className="w-1/3 h-1 bg-pink absolute right-0 bottom-40" />
+      <hr className="w-1/3 h-1 bg-pink absolute right-0 md:bottom-30 bottom-16" />
       <p className='text-nmSize lg:text-lgSize opacity-20	absolute left-0 -bottom-9 lg:-bottom-24 border-none'>Developer</p>
     </div>
   )
